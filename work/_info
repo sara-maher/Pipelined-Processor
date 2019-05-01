@@ -9,26 +9,26 @@ z2
 cModel Technology
 dC:/intelFPGA/18.0
 Ealu
-Z0 w1556473735
+Z0 w1556739814
 Z1 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z6 dD:/University Material/Architecture/Project/Pipelined-Processor
-Z7 8D:/University Material/Architecture/Project/Pipelined-Processor/alu.vhd
-Z8 FD:/University Material/Architecture/Project/Pipelined-Processor/alu.vhd
+Z6 dD:/UniversityMaterial/Architecture/Project/Pipelined-Processor
+Z7 8D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/alu.vhd
+Z8 FD:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/alu.vhd
 l0
 L8
-VVABKm40XY_kZeYS1P2]=73
-!s100 Ha`ZY3azYDjAFQWcf>d[93
+VIAo8DjRf^LgZ>51IV`caM1
+!s100 Vj[b=eI8F=jH0L@DM:VY[0
 Z9 OV;C;10.5b;63
 33
-Z10 !s110 1556473739
+Z10 !s110 1556741373
 !i10b 1
-Z11 !s108 1556473739.000000
-Z12 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/University Material/Architecture/Project/Pipelined-Processor/alu.vhd|
-Z13 !s107 D:/University Material/Architecture/Project/Pipelined-Processor/alu.vhd|
+Z11 !s108 1556741373.000000
+Z12 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/alu.vhd|
+Z13 !s107 D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/alu.vhd|
 !i113 1
 Z14 o-work work -2008 -explicit
 Z15 tExplicit 1 CvgOpt 0
@@ -38,11 +38,11 @@ R2
 R3
 R4
 R5
-DEx4 work 3 alu 0 22 VABKm40XY_kZeYS1P2]=73
-l20
-L18
-VDzin_E3?Ta4C:jAP:>R9n1
-!s100 Nc<T[]dgcZoOO3Z@mRUim3
+Z16 DEx4 work 3 alu 0 22 IAo8DjRf^LgZ>51IV`caM1
+l17
+L16
+VY]d<NNW0z4@JcMLLSz5i63
+!s100 bPIFkzWk<jzQ`RzS5>AjU3
 R9
 33
 R10
@@ -54,26 +54,230 @@ R13
 R14
 R15
 Eexcute
-w1556438749
+Z17 w1556741371
 R1
 R2
 R3
 R4
 R5
 R6
-8D:/University Material/Architecture/Project/Pipelined-Processor/excution.vhd
-FD:/University Material/Architecture/Project/Pipelined-Processor/excution.vhd
+Z18 8D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/execution.vhd
+Z19 FD:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/execution.vhd
 l0
 L8
-VP3GiO1VgSCTNhAjcQl8c81
-!s100 =41FEXmHF1Y?bf?VJhNSR2
+VVONFaCQAMnam]eER[N5GV2
+!s100 1hN1[5Ng@[b4U9;U0_46S0
 R9
-32
+33
 R10
 !i10b 1
 R11
-!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/University Material/Architecture/Project/Pipelined-Processor/excution.vhd|
-!s107 D:/University Material/Architecture/Project/Pipelined-Processor/excution.vhd|
+Z20 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/execution.vhd|
+Z21 !s107 D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/execution.vhd|
 !i113 1
-o-work work -2002 -explicit
+R14
+R15
+Aa_excute
+Z22 DEx4 work 11 ff_register 0 22 7P0DN0mW`2@AEBcE>R2ao0
+Z23 DEx4 work 8 jmp_ctrl 0 22 >@6e89NELPSoF0QC>V1Ld0
+R16
+Z24 DEx4 work 6 mux4x1 0 22 Z6dbXIg5P>knO77h`l?]L2
+Z25 DEx4 work 9 frwd_unit 0 22 ;NlXZIb64Ef@iNGjHf>T80
+R1
+R2
+R3
+R4
+R5
+DEx4 work 6 excute 0 22 VONFaCQAMnam]eER[N5GV2
+l28
+L23
+VhkW<R?Z4GF8IG6=HMKoNO0
+!s100 N?KlagG[2WI[6anOJ3Z8V2
+R9
+33
+R10
+!i10b 1
+R11
+R20
+R21
+!i113 1
+R14
+R15
+Eff_register
+Z26 w1556737569
+R1
+R3
+R4
+R5
+R6
+Z27 8D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/register.vhd
+Z28 FD:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/register.vhd
+l0
+L6
+V7P0DN0mW`2@AEBcE>R2ao0
+!s100 XR2@IQ0BOeTETkTg;8lnT1
+R9
+32
+Z29 !s110 1556741374
+!i10b 1
+Z30 !s108 1556741374.000000
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/register.vhd|
+Z32 !s107 D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/register.vhd|
+!i113 1
+Z33 o-work work -2002 -explicit
+R15
+Aa_ff_register
+R1
+R3
+R4
+R5
+R22
+l14
+L13
+Z34 V0<:9<6l;7ebfnX>=U==071
+Z35 !s100 fm4aoo]WPZJV0UA2XY2;C1
+R9
+32
+R29
+!i10b 1
+R30
+R31
+R32
+!i113 1
+R33
+R15
+Efrwd_unit
+Z36 w1556738698
+R1
+R2
+R3
+R4
+R5
+R6
+Z37 8D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/frwd_unit.vhd
+Z38 FD:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/frwd_unit.vhd
+l0
+L8
+V;NlXZIb64Ef@iNGjHf>T80
+!s100 JG@I=1M1bbgLIL<?A@SMA1
+R9
+32
+R29
+!i10b 1
+R30
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/frwd_unit.vhd|
+Z40 !s107 D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/frwd_unit.vhd|
+!i113 1
+R33
+R15
+Aa_frwd_unit
+R1
+R2
+R3
+R4
+R5
+R25
+l21
+L18
+V7gKK[d@TDNc0W_aXCGMIW3
+!s100 mI7cf4l09PZ`b<lXDfVQ=0
+R9
+32
+R29
+!i10b 1
+R30
+R39
+R40
+!i113 1
+R33
+R15
+Ejmp_ctrl
+Z41 w1556723690
+R1
+R2
+R3
+R4
+R5
+R6
+Z42 8D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/jmp_ctrl.vhd
+Z43 FD:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/jmp_ctrl.vhd
+l0
+L8
+V>@6e89NELPSoF0QC>V1Ld0
+!s100 YgQ>QEOXSHl<G_?3N5g=53
+R9
+32
+R29
+!i10b 1
+R30
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/jmp_ctrl.vhd|
+Z45 !s107 D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/jmp_ctrl.vhd|
+!i113 1
+R33
+R15
+Aa_jmp_ctrl
+R1
+R2
+R3
+R4
+R5
+R23
+l16
+L15
+V6>1OTCG1T_;K`ic?50bfm0
+!s100 e__V234z;:1`^LFC:01^;3
+R9
+32
+R29
+!i10b 1
+R30
+R44
+R45
+!i113 1
+R33
+R15
+Emux4x1
+Z46 w1556720611
+R1
+R2
+R3
+R4
+R5
+R6
+Z47 8D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/mux4x1.vhd
+Z48 FD:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/mux4x1.vhd
+l0
+L8
+VZ6dbXIg5P>knO77h`l?]L2
+!s100 9XzdP]`Va@b@>M=DjHDib3
+R9
+32
+R29
+!i10b 1
+R30
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/mux4x1.vhd|
+Z50 !s107 D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/mux4x1.vhd|
+!i113 1
+R33
+R15
+Aa_mux4x1
+R1
+R2
+R3
+R4
+R5
+R24
+l16
+L15
+VXKF_Fl1mgR[3H_1_bYMVF0
+!s100 N^iZZ5VLhBQ>1B7?SY0IH1
+R9
+32
+R29
+!i10b 1
+R30
+R49
+R50
+!i113 1
+R33
 R15
