@@ -3,7 +3,6 @@ import opcodes as op
 def writeFile(translated_code):
     f = open("mem.txt", "w")
     for i in range(len(translated_code)):
-        print(i,translated_code[i]) 
         #f.write(str(i) + " "+str(translated_code[i])+'\n') #modify
         f.write(str(translated_code[i])+'\n')
     f.close()
@@ -12,7 +11,6 @@ def convertToBin(num, n):
    decimalNum = int(num, 16)
    binaryNum = bin(decimalNum)[2:]
    s = ''
-   print("lenbin: ", len(str(binaryNum)) , " n: ", n)
    for k in range(0, n-len(str(binaryNum))):    
      s += '0'
      
@@ -32,7 +30,6 @@ def assembler(translated_code):
         code = ln.split('#')
         l = code[0].replace(","," ")
         l = l.split()
-        print(l)
         i = 0
         
         if( len(l) == 0): #empty line
@@ -48,14 +45,12 @@ def assembler(translated_code):
                     #translated_code.append("0")
                 i += 2
                 Flag = True
-                print(translated_code)
                 break
             
             if (j == 1): #M[0]
                 num = convertToBin(l[i],16)
                 translated_code.append(num)
                 i += 1
-                print(translated_code)
                 Flag = True
                 continue
             
@@ -63,7 +58,6 @@ def assembler(translated_code):
                 num = convertToBin(l[i],16)
                 translated_code.append(num)
                 i += 1
-                print(translated_code)
                 Flag = True
                 continue 
             
@@ -79,7 +73,6 @@ def assembler(translated_code):
                     print("instruction "+l[i]+" not found !!")
                     return
                 assembled += instruction_code
-                print("instrcode: ", assembled)
                 
             elif(i == 1):
                 try:   
@@ -107,7 +100,7 @@ def assembler(translated_code):
                         return
                     assembled += register_code
             i += 1
-            print(translated_code)
+            
             
         if(not Flag):
            for k in range(len(assembled), 16):
