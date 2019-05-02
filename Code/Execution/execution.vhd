@@ -11,7 +11,7 @@ entity excute is
        load_value,  id_ex_src_val, id_ex_dst_val , ex_mem_reg_val, mem_wb_reg_val: in std_logic_vector(n-1 downto 0) ;
        id_ex_reg_src, id_ex_reg_dst , ex_mem_reg_dst, mem_wb_reg_dst : in std_logic_vector(2 downto 0) ;
        load_address: std_logic_vector (2 downto 0);
-       immediate_val: std_logic_vector(n-1 downto 0);
+       immediate_val: std_logic_vector(6 downto 0);
       opcode_alu, opcode_load: in std_logic_vector (4 downto 0);
             port_wire : inout std_logic_vector(n-1 downto 0) ;
             pcsrc:out std_logic_vector(2 downto 0);
@@ -23,14 +23,16 @@ entity excute is
 Architecture a_excute of excute is
     signal buffer_in: std_logic_vector((2*n+11) downto 0);
     signal AluOp_a, AluOp_b, Alu_out: std_logic_vector(n-1 downto 0) ;
+    signal AluOp: std_logic_vector (4 downto 0);
     signal frwd_a, frwd_b: std_logic_vector(1 downto 0);
     signal mem_wb_reg_write_1, ex_mem_reg_write_1: std_logic;
 begin
-  
+  AluOp <= opcode_load when (opcode_load = "10001")
+      else opcode_alu;
     forward_unit: entity work.frwd_unit
       generic map(n=> 3)
       port map( clk =>clk,
-      opcode_load =>opcode_load,
+      opcode_load =>opcode_load, opcode_alu =>opcode_alu,
             id_ex_reg_src => id_ex_reg_src, id_ex_reg_dst =>id_ex_reg_dst,
             ex_mem_reg_dst =>ex_mem_reg_dst,
             mem_wb_reg_dst => mem_wb_reg_dst,
@@ -39,19 +41,19 @@ begin
     
     mux_a: entity work.mux4x1
       generic map(n=> n)
-      port map( a=>id_ex_src_val,b =>ex_mem_reg_val,c=> mem_wb_reg_val, d=>immediate_val,
+      port map( a=>id_ex_src_val,b =>ex_mem_reg_val,c=> mem_wb_reg_val, d=>(others=>'0'),
         sel =>frwd_a, f => AluOp_a);
     
     mux_b: entity work.mux4x1
       generic map(n=> n)
-      port map( a => id_ex_dst_val,b =>ex_mem_reg_val,c=> mem_wb_reg_val,d=>(others=>'0'),
+      port map( a => id_ex_dst_val,b =>ex_mem_reg_val,c=> mem_wb_reg_val,d=>immediate_val,
           sel =>frwd_b,
           f=>AluOp_b);
 
     ALU_instance: entity work.alu
       generic map(n=> n)
       port map( a =>AluOp_a, b =>AluOp_b,
-          aluop => opcode_alu,
+          aluop => AluOp,
           c => c,neg => neg,z =>z,
           f => Alu_out);
 
@@ -82,7 +84,7 @@ begin
 -- POP Rdst 10000 xxx 1 9
 -- LDM Rdst, Imm(15 bit) 10001 xxx ?? 1 9
 -- LDD Rsrc, Rdst 10010 xxx xxx 1 12
--- STD Rsrc, Rdst 10011 xxx xxx 1 12
+-- STD Rsrc, Rdst 10011 xxx xxx 1 123
 -- CALL Rdst 11000 xxx 1 9
 -- RET 11001 - 1 6
 -- RTI 11010 - 1 6

@@ -9,7 +9,7 @@ sim:/mux4x1/sel
 force -freeze sim:/mux4x1/a 0000000000000000 0
 force -freeze sim:/mux4x1/b 0000000000000001 0
 force -freeze sim:/mux4x1/c 0000000000000010 0
-force -freeze sim:/mux4x1/d 0000000000000011 0
+force -freeze sim:/mux4x1/d 0000011 0
 force -freeze sim:/mux4x1/sel 00 0
 run
 force -freeze sim:/mux4x1/sel 01 0

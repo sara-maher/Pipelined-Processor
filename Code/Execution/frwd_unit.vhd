@@ -8,7 +8,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity frwd_unit is -- takes registers address, outs if we forward or not
     generic (n: integer := 3);
   port ( clk: in std_logic;
-  opcode_load: in std_logic_vector (4 downto 0);
+  opcode_load, opcode_alu: in std_logic_vector (4 downto 0);
   id_ex_reg_src, id_ex_reg_dst, ex_mem_reg_dst : in std_logic_vector(n-1 downto 0) ;
   mem_wb_reg_dst : in std_logic_vector(n-1 downto 0) ;
   mem_wb_reg_write_1, ex_mem_reg_write_1: in std_logic;          
@@ -39,8 +39,6 @@ process (clk )  --i tried working the process with inputs instead of clk but it 
             a<="01";
         elsif mem_wb_reg_write_1='1' and wb_raw_a='1' then
             a<="10";
-        elsif opcode_load = "10001" then 
-            a<="11";
         else
             a<="00";
         end if;
@@ -48,6 +46,8 @@ process (clk )  --i tried working the process with inputs instead of clk but it 
             b<="01";
         elsif mem_wb_reg_write_1='1' and wb_raw_b='1' then
             b<="10";
+        elsif opcode_load = "10001" or opcode_alu ="01101" or opcode_alu = "01110" then 
+            b<="11";
         else
             b<="00";
         end if;

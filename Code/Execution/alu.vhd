@@ -62,6 +62,8 @@ begin
         elsif (aluop = "01000" or aluop = "10100" or aluop = "10101" or aluop = "10110" or aluop = "10111") then  -- should have a signal indicating that this is a port value
             temp (n-1 downto 0 ):=a;
         -- Reset 11011 - 1 6
+        elsif(aluop = "10001") then
+            temp (n-1 downto 0 ):=b;
         else  -- never should be here
             temp (n-1 downto 0 ) :=(others=>'Z');
         end if;

@@ -75,3 +75,5 @@ force -freeze sim:/alu/a FFFF 0
 force -freeze sim:/alu/b 0001 0
 force -freeze sim:/alu/aluop 9 0
 run
+force -freeze sim:/alu/aluop 11 0
+run
