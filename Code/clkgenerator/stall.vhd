@@ -24,7 +24,7 @@ Architecture DataFlow OF stall IS
 		Process(OpCode, cnt1_enable, cnt1_reset, counter2,cnt2_enable,cnt2_reset,counter1)
 			Begin
 			 --STALL2
-			IF (OpCode = "01111" or OPCOde = "10000" or OpCode ="11001") then --Add then push, pop RET
+			IF (OpCode = "0101111" or OPCOde = "0110000" or OpCode ="0011001") then --Add then push, pop RET
 				stall2 <= '1';
 				cnt1_enable <= '1';
 				cnt1_reset <= '1';
@@ -34,7 +34,7 @@ Architecture DataFlow OF stall IS
 					cnt1_reset <= '1';
 					cnt1_enable <= '0';
 				END IF;
-			ELSIF(OpCode = "11100" or OpCOde= "11010")then --Add laterInterrupt and RTI opcodes
+			ELSIF(OpCode = "0011100" or OpCOde= "0011010")then --Add laterInterrupt and RTI opcodes
 			       stall2 <= '1';
 			       cnt2_enable <= '1';
 			       cnt2_reset <='1';	
