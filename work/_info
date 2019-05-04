@@ -24,9 +24,9 @@ VIAo8DjRf^LgZ>51IV`caM1
 !s100 Vj[b=eI8F=jH0L@DM:VY[0
 Z9 OV;C;10.5b;63
 33
-Z10 !s110 1556921877
+Z10 !s110 1556991279
 !i10b 1
-Z11 !s108 1556921877.000000
+Z11 !s108 1556991279.000000
 Z12 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/alu.vhd|
 Z13 !s107 D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/alu.vhd|
 !i113 1
@@ -99,7 +99,7 @@ R21
 R22
 R15
 Eexcute
-Z23 w1556803305
+Z23 w1556990750
 R1
 R2
 R3
@@ -110,13 +110,13 @@ Z24 8D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Executi
 Z25 FD:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/execution.vhd
 l0
 L8
-V_kc2X<>5Qh8_k`JY8X9i23
-!s100 :4mUf6I>2]0?zT1GhKjOJ1
+V6H`]`eiOjX>D8Eez6LLRQ3
+!s100 dcIA;=aZb5MN9caCdc0zh1
 R9
 33
-!s110 1556921876
+R10
 !i10b 1
-Z26 !s108 1556921876.000000
+Z26 !s108 1556991278.000000
 Z27 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/execution.vhd|
 Z28 !s107 D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/execution.vhd|
 !i113 1
@@ -126,18 +126,18 @@ Aa_excute
 Z29 DEx4 work 11 ff_register 0 22 7P0DN0mW`2@AEBcE>R2ao0
 Z30 DEx4 work 8 jmp_ctrl 0 22 >@6e89NELPSoF0QC>V1Ld0
 R16
-Z31 DEx4 work 6 mux4x1 0 22 nMNNea@UHbU`:zY:1EiTU2
-Z32 DEx4 work 9 frwd_unit 0 22 WYWhJi43:;9G4Q]LCe;Mk1
+Z31 DEx4 work 6 mux5x1 0 22 F^lz2BCGjz5R^ni?[4Q;90
+Z32 DEx4 work 9 frwd_unit 0 22 UEomWIcYlhM>>bl8eLinb2
 R1
 R2
 R3
 R4
 R5
-DEx4 work 6 excute 0 22 _kc2X<>5Qh8_k`JY8X9i23
+DEx4 work 6 excute 0 22 6H`]`eiOjX>D8Eez6LLRQ3
 l29
-L23
-VD<Bfl_8Nb8gVZ>YZ:SQa81
-!s100 _]1AMhNeodk1:l?^;d]1i2
+L24
+VkJB`2cV4b77>z_a?W?m=21
+!s100 Y>:J@hCohFOS@ZH8=`Mb`1
 R9
 33
 R10
@@ -192,7 +192,7 @@ R37
 R22
 R15
 Efrwd_unit
-Z38 w1556799686
+Z38 w1556990562
 R1
 R2
 R3
@@ -203,8 +203,8 @@ Z39 8D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Executi
 Z40 FD:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/frwd_unit.vhd
 l0
 L8
-VWYWhJi43:;9G4Q]LCe;Mk1
-!s100 jRcP9NCnYbd[S56Be3mj:2
+VUEomWIcYlhM>>bl8eLinb2
+!s100 oFN0]l=kS^a`RFKmaAPhM3
 R9
 32
 R10
@@ -224,8 +224,8 @@ R5
 R32
 l21
 L18
-Vkco?ZEaV>=3>F9EK;e]k63
-!s100 7B<Se;OBij3k4bNaJJYAa2
+VcmFFPzmKlS[3]LDz68HO:0
+!s100 lT893j`oX6?=m`kG<<A]:1
 R9
 32
 R10
@@ -297,11 +297,11 @@ VnMNNea@UHbU`:zY:1EiTU2
 !s100 K95D9^Dg2EYI>4T<U3fWh1
 R9
 32
-R10
+Z51 !s110 1556921877
 !i10b 1
-R11
-Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/mux4x1.vhd|
-Z52 !s107 D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/mux4x1.vhd|
+Z52 !s108 1556921877.000000
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/mux4x1.vhd|
+Z54 !s107 D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/mux4x1.vhd|
 !i113 1
 R22
 R15
@@ -311,18 +311,63 @@ R2
 R3
 R4
 R5
-R31
+DEx4 work 6 mux4x1 0 22 nMNNea@UHbU`:zY:1EiTU2
 l17
 L16
 VBQ90cM[Cl<?cfj4Fl`5oJ0
 !s100 3z4^A_n=?2nZ]kKORW=YI3
 R9
 32
-R10
+R51
+!i10b 1
+R52
+R53
+R54
+!i113 1
+R22
+R15
+Emux5x1
+Z55 w1556991269
+R1
+R2
+R3
+R4
+R5
+R6
+Z56 8D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/mux5x1.vhd
+Z57 FD:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/mux5x1.vhd
+l0
+L8
+VF^lz2BCGjz5R^ni?[4Q;90
+!s100 <B5<ZTbm3ZDRLe9g8O@I=0
+R9
+32
+Z58 !s110 1556991280
 !i10b 1
 R11
-R51
-R52
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/mux5x1.vhd|
+Z60 !s107 D:/UniversityMaterial/Architecture/Project/Pipelined-Processor/Code/Execution/mux5x1.vhd|
+!i113 1
+R22
+R15
+Aa_mux5x1
+R1
+R2
+R3
+R4
+R5
+R31
+l17
+L16
+V3<[oUUOO;:ZWlNKjC8WmY0
+!s100 Foz:<EhCh^?VZUeGLX1b`0
+R9
+32
+R58
+!i10b 1
+R11
+R59
+R60
 !i113 1
 R22
 R15

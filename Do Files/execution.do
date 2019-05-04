@@ -22,9 +22,12 @@ sim:/excute/id_ex_src_val \
 sim:/excute/immediate_val \
 sim:/excute/load_address \
 sim:/excute/load_value \
-sim:/excute/mem_wb_reg_dst \
-sim:/excute/mem_wb_reg_val \
+sim:/excute/mem_wb_reg_dst_alu \
+sim:/excute/mem_wb_reg_val_alu \
 sim:/excute/mem_wb_reg_write_1 \
+sim:/excute/mem_wb_reg_dst_ld \
+sim:/excute/mem_wb_reg_val_ld \
+sim:/excute/mem_wb_reg_write_2 \
 sim:/excute/n \
 sim:/excute/n_mem \
 sim:/excute/neg \
@@ -48,8 +51,8 @@ force -freeze sim:/excute/immediate_val 5555 0
 force -freeze sim:/excute/load_address 0 0
 force -freeze sim:/excute/load_value 0000 0
 force -freeze sim:/excute/load_address 7 0
-force -freeze sim:/excute/mem_wb_reg_dst 3 0
-force -freeze sim:/excute/mem_wb_reg_val 3333 0
+force -freeze sim:/excute/mem_wb_reg_dst_alu 3 0
+force -freeze sim:/excute/mem_wb_reg_val_alu 3333 0
 force -freeze sim:/excute/mem_wb_reg_write_1 0 0
 force -freeze sim:/excute/opcode_alu 09 0
 force -freeze sim:/excute/opcode_load 0F 0
