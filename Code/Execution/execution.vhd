@@ -17,7 +17,7 @@ entity excute is
             port_wire : inout std_logic_vector(n-1 downto 0) ;
             pcsrc:out std_logic_vector(2 downto 0);
             c,z,neg: out std_logic;
-            JmpAddress: out std_logic_vector(n-1 downto 0) ;
+            JmpAddress: out std_logic_vector(2*n-1 downto 0) ;
           buffer_out : out std_logic_vector((2*n+11) downto 0));
         end ;
         
@@ -65,7 +65,8 @@ begin
           pcsrc=>pcsrc);
     port_wire <= Alu_out when opcode_alu = "0110" else --set port_wire, should this be an output and then muxed   ?
     (others=>'Z');
-    JmpAddress <= Alu_out;
+    JmpAddress(15 downto 0) <= Alu_out;
+    JmpAddress (31 downto 16) <= (others =>Alu_out(15));
     buffer_in ((2*n+11) downto (n+12))<= alu_out;
     buffer_in ((n+11) downto 12)<= load_value;
     buffer_in (11 downto 7)<= opcode_load;
